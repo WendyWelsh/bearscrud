@@ -16,6 +16,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
-})
+
+Route.get('/bear', 'BearController.bearget')
+Route.post('/bear', 'BearController.bearcreate')
+Route.delete('/bear', 'BearController.beardelete')
