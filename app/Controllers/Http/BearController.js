@@ -24,10 +24,7 @@ class BearController {
             return eachItem.id !== body.id //false removes
         })
         response.send(bears)
-        // console.log(newbears)
-        //capitals = capitals.filter((element) => {
-        // console.log(element.country === body.country)
-        // console.log(eachItem.country !== body.id)
+        
     }
 }
 
